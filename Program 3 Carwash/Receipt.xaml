@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Program_3_Carwash.Receipt"
+             Title="Receipt"
+              BackgroundColor="#222233"
+             >
+    <VerticalStackLayout
+
+            Padding="30,0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+           
+           >
+
+        <Label
+                HorizontalOptions="Center"
+            Margin="30"
+                Text="Lenny's Car Wash"
+                TextColor="CadetBlue"
+                FontSize="50"
+                FontAttributes="Bold,Italic"
+                />
+
+       
+            <Label
+            Text="Receipt"
+            HorizontalOptions="Center"
+            Padding="230,15"
+            FontSize="25"
+            TextColor="White"
+            BackgroundColor="#555566"
+            
+            />
+    
+        <Label x:Name="code1"
+               BackgroundColor="#444455"
+               FontSize="20"
+               TextColor="White"
+               />
+        <Label x:Name="totalAmount"
+               BackgroundColor="#555566"
+               FontSize="22"
+               TextColor="#FFAAAA"
+               Padding="180,15"
+               HorizontalOptions="Fill"
+               />
+        <Button Text="New Order" BackgroundColor="#779977" TextColor="White" MaximumWidthRequest="220" Clicked="onClick2" Margin="30"/>
+
+    </VerticalStackLayout>
+</ContentPage>

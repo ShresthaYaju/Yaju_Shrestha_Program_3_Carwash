@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Program_3_Carwash.MainPage"
+              BackgroundColor="#222233"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+           >
+
+            <Label
+                Text="Lenny's Car Wash"
+                TextColor="CadetBlue"
+                FontSize="50"
+                FontAttributes="Bold,Italic"
+                HorizontalOptions="Center"
+                />
+            
+            
+            <Label
+                Text="Select your Wash:"
+                FontSize="25"
+                TextColor="White"
+                />
+
+      
+            <VerticalStackLayout
+                BackgroundColor="#444455"
+             
+               >
+                <RadioButton
+                    x:Name="basicWash" Content="Basic Wash($10.00)"
+                    TextColor="White"
+
+                    />
+                <RadioButton
+                    x:Name="premiumWash" Content="Premium Wash($15.00)"
+                    TextColor="White"
+      
+                    />
+                <RadioButton
+                    x:Name="ultraWash" Content="Ultra Wash($20.00)"
+                    TextColor="White"
+           
+                    />
+            </VerticalStackLayout>
+    
+            <Label
+                Text="Add Ons?:"
+                FontSize="25"
+                TextColor="White"
+                />
+            <HorizontalStackLayout>
+                <VerticalStackLayout
+                    Padding="10"
+                Background="#444455">
+                <HorizontalStackLayout
+                   >
+                        <CheckBox  x:Name="airFreshener" />
+                        <Label  VerticalOptions="Center" TextColor="White" Text="Air Freshenre Add-On ($2.00)"/>
+                </HorizontalStackLayout>
+                    <HorizontalStackLayout VerticalOptions="Center">
+                    <CheckBox  x:Name="waxOnAddOn" />
+                        <Label VerticalOptions="Center" TextColor="White" Text="Wax On Add-On ($5.00)" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout
+                 Padding="10"
+                Background="#444455">
+                    <HorizontalStackLayout VerticalOptions="Center">
+                        <CheckBox  x:Name="wheelShineAddOn"   />
+                        <Label VerticalOptions="Center" TextColor="white" Text="Wheel Shine Add-On ($5.00)" />
+                </HorizontalStackLayout>
+                    <HorizontalStackLayout VerticalOptions="Center">
+                        <CheckBox  x:Name="vacuumAddOn"  />
+                        <Label VerticalOptions="Center" TextColor="White" Text="Vacuum Add-On ($2.00)" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <Label x:Name="error" Text="" TextColor="#FF7777" HorizontalOptions="Center"/>
+
+            <Button Text="Finalize Selections" BackgroundColor="#779977" TextColor="White" MaximumWidthRequest="220" Clicked="onClick"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
